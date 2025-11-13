@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Kita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+          <h1 class="Logo">KOPI KITA</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+    </header>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kopi Kita - Kontak & Lokasi</title>
+    
+    <style>
+        :root {
+            --color-primary: #5c3c26; /* Warna Kopi Coklat Tua */
+            --color-secondary: #a07a58; /* Warna Kopi Coklat Muda */
+            --color-accent: #f5e6d3; /* Warna Krim/Latte */
+            --color-light: #ffffff;
+            --color-dark: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-accent); /* Latar belakang krim */
+            color: var(--color-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: var(--color-light);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap; /* Untuk tampilan responsif */
+        }
+
+        .header {
+            width: 100%;
+            background-color: var(--color-primary);
+            color: var(--color-light);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        .contact-details {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .contact-details h2 {
+            color: var(--color-primary);
+            border-bottom: 3px solid var(--color-secondary);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item h3 {
+            color: var(--color-secondary);
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item h3::before {
+            content: "☕"; /* Icon Kopi */
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .info-item p, .info-item a {
+            margin: 0;
+            font-size: 1.05em;
+            color: var(--color-dark);
+        }
+
+        .info-item a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-item a:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .map-section {
+            flex: 1;
+            min-height: 400px; /* Tinggi minimum untuk peta */
+            background-color: var(--color-primary);
+            color: var(--color-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 20px;
+            /* Placeholder untuk Peta */
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/450x450/5c3c26/ffffff?text=PETA+LOKASI'); 
+            background-size: cover;
+            background-position: center;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        /* Untuk tampilan yang lebih sempit (misalnya ponsel) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 20px;
+            }
+            .map-section {
+                min-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>Hubungi Kopi Kita</h1>
+            <p>Pusat ngopi terbaik di Jakarta Selatan</p>
+        </div>
+
+        <div class="contact-details">
+            <h2>Informasi Kontak</h2>
+
+            <div class="info-item">
+                <h3>Alamat Kami</h3>
+                <address>
+                    Jl. Kebon Kopi No. 1696<br>
+                    Komp. Niaga Nusantara Blok B-5,<br>
+                    Jakarta Selatan 12190
+                </address>
+            </div>
+
+            <div class="info-item">
+                <h3>Telepon</h3>
+                <a href="tel:02139995482">(021) 3999-KITA (5482)</a>
+                <p style="font-size: 0.9em; color: #666;">Hubungi kami selama jam operasional.</p>
+            </div>
+
+            <div class="info-item">
+                <h3>WhatsApp/Ponsel</h3>
+                <a href="https://wa.me/628119205482" target="_blank">+62 811-920-KITA (5482)</a>
+                <p style="font-size: 0.9em; color: #666;">Fast response via WhatsApp.</p>
+            </div>
+
+            <div class="info-item">
+                <h3>Email</h3>
+                <a href="mailto:halo@kopikita.id">halo@kopikita.id</a>
+            </div>
+            
+        </div>
+
+        <div class="map-section">
+            <p>Lokasi Kami di Peta</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
